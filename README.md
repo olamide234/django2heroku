@@ -16,10 +16,11 @@ django-admin startproject myproject
 - Create a file called .gitignore with the following content:
 ```
 # See the name for you IDE
-.idea
+.idea #if using pycharm
+.vscode #if using virtual studio code
 # If you are using sqlite3
 *.sqlite3
-# Name of your virtuan env"
+# Name of your virtuan env
 .vEnv
 *pyc
 ```
