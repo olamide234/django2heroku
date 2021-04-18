@@ -30,13 +30,13 @@ django-admin startproject myproject
 - create an .env file at the root path and insert the following variables
 - SECRET_KEY=Your$eCretKeyHere (Get this secrety key from the settings.py)
 - DEBUG=True
-# Settings.py
+## Settings.py
 - from decouple import config
 - SECRET_KEY = config('SECRET_KEY')
 - DEBUG = config('DEBUG', default=False, cast=bool)
 # Configuring the Data Base (You don't need that if you already had an database).
 pip install dj-database-url
-# Settings.py
+## Settings.py
 from dj_database_url import parse as dburl
 default_dburl = 'sqlite:///' + os.path.join(BASE_DIR, 'db.sqlite3')
 
@@ -45,11 +45,11 @@ DATABASES = { 'default': config('DATABASE_URL', default=default_dburl, cast=dbur
 # Static files
 pip install dj-static
 
-# wsgi
+## wsgi
 - from dj_static import Cling
 - application = Cling(get_wsgi_application())
 - Also don't forget to check "DJANGO_SETTINGS_MODULE". It is prone to frequent mistakes.
-# Settings.py
+## Settings.py
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 # Create a requirements-dev.txt
 pip freeze > requirements-dev.txt
@@ -90,5 +90,5 @@ heroku run python3 manage.py createsuperuser (the same as above)
 - heroku config:set DISABLE_COLLECTSTATIC=1
 ## Also recommend set this configuration to your heroku settings
 - WEB_CONCURRENCY = 3
-# Changing a specific configuration
+## Changing a specific configuration
 - heroku config:set DEBUG=True
