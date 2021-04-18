@@ -38,9 +38,8 @@ django-admin startproject myproject
 # Configuring the Data Base (You don't need that if you already had an database).
 pip install dj-database-url
 ## Settings.py
-from dj_database_url import parse as dburl
-default_dburl = 'sqlite:///' + os.path.join(BASE_DIR, 'db.sqlite3')
-
+- from dj_database_url import parse as dburl<br/>
+default_dburl = 'sqlite:///' + os.path.join(BASE_DIR, 'db.sqlite3')<br/>
 DATABASES = { 'default': config('DATABASE_URL', default=default_dburl, cast=dburl), }
 
 # Static files
