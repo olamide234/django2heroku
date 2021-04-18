@@ -68,7 +68,7 @@ python-3.6.0 (You can currently use "python-3.7.3")
 You should install heroku CLI tools in your computer previously ( See http://bit.ly/2jCgJYW )
 
 - heroku apps:create app-name (you can create by heroku it's self if you wanted.) You can also login in heroku by: heroku login Remember to grab the address of the app in this point
-#Setting the allowed hosts
+# Setting the allowed hosts
 - include your address at the ALLOWED_HOSTS directives in settings.py - Just the domain, make sure that you will take the protocol and slashes from the string
 # Heroku install config plugin
 heroku plugins:install heroku-config
