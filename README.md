@@ -54,7 +54,7 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 # Create a requirements-dev.txt
 pip freeze > requirements-dev.txt
 
-# Create a file requirements.txt file and include reference to previows file and add two more requirements
+# Create a file requirements.txt file and include reference to previous file and add two more requirements
 - -r requirements-dev.txt
 - gunicorn
 - psycopg2
@@ -62,7 +62,7 @@ pip freeze > requirements-dev.txt
 - web: gunicorn project.wsgi
 - You can check in django website or heroku website for more information: https://docs.djangoproject.com/en/2.2/howto/deployment/wsgi/gunicorn/<br/>
 https://devcenter.heroku.com/articles/django-app-configuration
-# Create a file runtime.txt and add the following core
+# Create a file runtime.txt and add the following 
 python-3.6.0 (You can currently use "python-3.7.3")
 # Creating the app at Heroku
 You should install heroku CLI tools in your computer previously ( See http://bit.ly/2jCgJYW )
