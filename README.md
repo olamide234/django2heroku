@@ -60,6 +60,7 @@ pip freeze > requirements-dev.txt
 - psycopg2
 # Create a file Procfile and add the following code
 - web: gunicorn project.wsgi
+- (replace 'project' up above with your project name)
 - You can check in django website or heroku website for more information: https://docs.djangoproject.com/en/2.2/howto/deployment/wsgi/gunicorn/<br/>
 https://devcenter.heroku.com/articles/django-app-configuration
 # Create a file runtime.txt and add the following 
