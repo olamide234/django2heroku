@@ -74,8 +74,8 @@ You should install heroku CLI tools in your computer previously ( See http://bit
 # Heroku install config plugin
 heroku plugins:install heroku-config
 ## Sending configs from .env to Heroku ( You have to be inside tha folther where .env files is)
-heroku plugins:install heroku-config
-heroku config:push -a
+- heroku plugins:install heroku-config
+- heroku config:push -a
 ## To show heroku configs do
 heroku config (check this, if you fail changing by code, try changing by heroku dashboard)
 # Publishing the app
