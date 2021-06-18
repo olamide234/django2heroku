@@ -70,7 +70,7 @@ You should install heroku CLI tools in your computer previously ( See http://bit
 
 - heroku apps:create app-name (you can create by heroku it's self if you wanted.) You can also login in heroku by: heroku login Remember to grab the address of the app in this point
 # Setting the allowed hosts
-- include your address at the ALLOWED_HOSTS directives in settings.py - Just the domain, make sure that you will take the protocol and slashes from the string
+- include your address at the ALLOWED_HOSTS directives in settings.py - Just the domain, make sure that you will take the protocol and slashes from the string (e.g 'episode09.herokuapp.com')
 # Heroku install config plugin
 heroku plugins:install heroku-config
 ## Sending configs from .env to Heroku ( You have to be inside tha folther where .env files is)
