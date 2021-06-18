@@ -43,7 +43,7 @@ default_dburl = 'sqlite:///' + os.path.join(BASE_DIR, 'db.sqlite3')<br/>
 DATABASES = { 'default': config('DATABASE_URL', default=default_dburl, cast=dburl), }
 
 # Static files
-pip install dj-static
+pip install dj-static==0.0.6
 
 ## wsgi
 - from dj_static import Cling
