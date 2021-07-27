@@ -89,6 +89,8 @@ heroku run python3 manage.py createsuperuser (the same as above)
 # EXTRAS
 ## You may need to disable the collectstatic
 - heroku config:set DISABLE_COLLECTSTATIC=1
+## To run it later using bower
+- heroku run 'bower install --config.interactive=false;grunt prep;python manage.py collectstatic --noinput'
 ## Also recommend set this configuration to your heroku settings
 - WEB_CONCURRENCY = 3
 ## Changing a specific configuration
